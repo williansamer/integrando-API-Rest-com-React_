@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+  font-size: 1.4em;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav{
+  padding: 0 10px 0 10px;
+  width: 100%;
+  height: 100px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.container-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+}
+
+.menu li{
+  list-style: none;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+  color: inherit;
+}
+
+.aulas{
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.aulas li{
+  margin-bottom: 5px;
+}
+
+button{
+  background-color: rgb(129, 185, 250);
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px 1px rgba(0,0,0,0.5);
+  cursor: pointer;
+  font-size: 1.1em;
+}
+
+iframe{
+  margin-top: 15px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  outline: 0;
+  background-color: aliceblue;
+  border-bottom: 0.3px solid gray;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+small{
+  font-size: 0.8em;
+  color: gray;
+  margin-top: 15px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+input{
+  width: 30%;
+  height: 30px;
+  outline: 0;
+  background-color: aliceblue;
+  border-bottom: 0.3px solid gray;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  font-size: 1.1em;
+}
+
+small{
+  font-size: 0.8em;
+  color: gray;
+  margin-top: 15px;
+}
+
+.container-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.error{
+  color: red;
+  margin-top: 5px;
+}
