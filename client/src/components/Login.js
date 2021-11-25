@@ -18,7 +18,7 @@ function Login(props) {
             password
         })
         .then(res => {
-            console.log(res.data);
+            console.log(res);
 
             localStorage.setItem('user', JSON.stringify(res.data));
             props.login();
@@ -40,6 +40,7 @@ function Login(props) {
                 <input name="password" onChange={(event)=>setPassword(event.target.value)} type="password" required placeholder="digite a senha"/>
             <button onClick={handleLoginClick} type="submit">Entrar</button>
                 <small>Não tem login? <Link to="/user/registro">Registre-se</Link></small>
+                <p>Login de exemplo: <strong>cavera@gmail.com</strong> Senha de exemplo: <strong>134679</strong></p>
 
             <Outlet />
         </div>
