@@ -7,6 +7,7 @@ function AuthLogin(props) {
     const navigate = useNavigate();
 
     function handleLogout(){
+        localStorage.setItem('user', '');
         props.logout();
 
         if(props.logout){

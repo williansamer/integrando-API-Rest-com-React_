@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-//import LoginButton from './LoginButton'
 import AuthLogin from './AuthLogin'
 
 export default function Nav() {

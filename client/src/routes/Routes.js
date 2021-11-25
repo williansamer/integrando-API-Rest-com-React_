@@ -11,7 +11,6 @@ import Admin from '../components/Admin';
 import Sobre from '../components/Sobre';
 
 import PrivateRoute from '../components/PrivateRoute'; //importando PrivateRoute que é um componente que restringe o acesso a uma página.
-import PrivateAdmin from '../components/PrivateAdmin';
 import AcessoNegado from '../components/AcessoNegado';
 
 export default function MainRoutes() {
@@ -29,7 +28,7 @@ export default function MainRoutes() {
             <Route path="/aulas/:slug" element={<Aula />} />
           </Route>
           <Route path="/sobre" element={<Sobre />} />
-{/*           <Route path="/admin" element={<PrivateAdmin><Admin /></PrivateAdmin>} /> */}
+          <Route path="/admin" element={<PrivateRoute><Admin /></PrivateRoute>} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/acesso-negado" element={<AcessoNegado />} />
           <Route path="*" element={<div>Página não encontrada</div>} /> {/* "*" é um caminho que não existe. */}

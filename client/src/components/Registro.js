@@ -20,6 +20,7 @@ function Registro(props) {
         }).then(res => {
             console.log(res.data);
 
+            localStorage.setItem('user', JSON.stringify(res.data));
             props.login();
 
             if(props.login){
@@ -34,11 +35,11 @@ function Registro(props) {
   return (
     <div className="container-login">
       <label>Digite o nome</label>
-      <input type="name" onChange={(event)=>setName(event.target.value)} placeholder="digite o nome" required />
+      <input name="name" type="name" onChange={(event)=>setName(event.target.value)} placeholder="digite o nome" required />
       <label>Digite o email</label>
-      <input type="email" onChange={(event)=>setEmail(event.target.value)} placeholder="digite o email" required />
+      <input name="email" type="email" onChange={(event)=>setEmail(event.target.value)} placeholder="digite o email" required />
       <label>Digite a senha</label>
-      <input type="password" onChange={(event)=>setPassword(event.target.value)} placeholder="digite a senha" required />
+      <input name="password" type="password" onChange={(event)=>setPassword(event.target.value)} placeholder="digite a senha" required />
       <button onClick={handleRegisterClick} type="submit">Registrar</button>
       <Outlet />
     </div>

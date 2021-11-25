@@ -20,6 +20,7 @@ function Login(props) {
         .then(res => {
             console.log(res.data);
 
+            localStorage.setItem('user', JSON.stringify(res.data));
             props.login();
 
             if(props.login){
@@ -34,9 +35,9 @@ function Login(props) {
     return (
         <div className="container-login">
             <label>Digite o email</label>
-                <input onChange={(event)=>setEmail(event.target.value)} type="email" required placeholder="digite o email"/>
+                <input name="email" onChange={(event)=>setEmail(event.target.value)} type="email" required placeholder="digite o email"/>
             <label>Digite a senha</label>
-                <input onChange={(event)=>setPassword(event.target.value)} type="password" required placeholder="digite a senha"/>
+                <input name="password" onChange={(event)=>setPassword(event.target.value)} type="password" required placeholder="digite a senha"/>
             <button onClick={handleLoginClick} type="submit">Entrar</button>
                 <small>Não tem login? <Link to="/user/registro">Registre-se</Link></small>
 
