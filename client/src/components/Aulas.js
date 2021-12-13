@@ -11,7 +11,7 @@ export default function Aulas() {
             <ul className="aulas">
                 {data.map(aula => {
                     return (
-                        <li key={aula.id}><Link to={`${aula.slug}`}>{aula.title}</Link></li>
+                        <li key={aula.id}><Link className='route-link-white' to={`${aula.slug}`}>{aula.title}</Link></li>
                     )}
                 )}
             </ul>

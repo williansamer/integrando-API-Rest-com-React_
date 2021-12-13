@@ -19,7 +19,7 @@ function AuthLogin(props) {
         <div>
             {props.log ?
                 <button onClick={handleLogout}>Logout</button> :
-                <button type="submit"><Link to="/user/log">Login</Link></button>}
+                <button type="submit"><Link className='route-link' to="/user/log">Login</Link></button>}
         </div>
     )
 }
